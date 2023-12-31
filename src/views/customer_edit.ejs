@@ -6,7 +6,7 @@
         <div class="col-md-5">
             <div class="card">
                 <div class="card-body">
-                    <form action="/update/" method="post">
+                    <form action="/update/<%= data.id %>" method="post">
                         <div class="form-group mt-4">
                             <input type="text" name="name" value="<%= data.name %>" placeholder="name" class="form-control">
                         </div>
@@ -16,7 +16,7 @@
                         <div class="form-group mt-4">
                             <input type="text" name="phone" value="<%= data.phone %>" placeholder="Phone" class="form-control">
                         </div>
-                        <button type="submit" class="btn btn-primary mt-4">Save Customer
+                        <button type="submit" class="btn btn-primary mt-4">Edit Customer
                         </button>
                     </form> 
                 </div>
